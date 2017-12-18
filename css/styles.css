@@ -54,3 +54,13 @@ td{
     background-color: rgb(186, 6, 0);
     color: white;
 }
+
+.dead
+{
+	background-color: black;
+}
+
+.alive{
+  background-color: white;
+  color: black;
+}

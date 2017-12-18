@@ -16,8 +16,6 @@ function changeStatus(){
 			document.getElementById(i+","+j).className=flagAux[i][j];	
 }
 
-
-
 function cellEnviroment(aux,aux2)
 {
 	let life=0;
@@ -77,7 +75,6 @@ function stop() {
     clearTimeout(timer);                      
 }
 
-
 function dTableValues(){
 		document.getElementById("indexTable").innerHTML="";
 	for(let i=0;i<longValue;i++){
@@ -98,26 +95,28 @@ function cellStatus(i,j){
 		flagAux[i][j]="dead";	
 }
 
-
 function start() {
     timer = setInterval(nextToChange, speed);            
 }
 
 function fillValues(){	
-	for(let i=0;i<longValue;i++)
-		for(let j=0;j<longValue;j++)
+	for(let i=0;i<longValue;i++){
+        for(let j=0;j<longValue;j++)
 		{
 			document.getElementById(i+","+j).className = Math.random() > 0.7 ? 'alive' : 'dead';
 		}
+    }
+		
 }
-
 
 function nextToChange(){
 	startMatrix();
-	for(let i=0;i<longValue;i++)
-		for(let j=0;j<longValue;j++)
+	for(let i=0;i<longValue;i++){
+        for(let j=0;j<longValue;j++)
 		{
 			cellStatus(i,j);					
 		}
+    }
+		
 	changeStatus();
 }

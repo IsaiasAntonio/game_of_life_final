@@ -1,7 +1,7 @@
 body{
-    background-color: rgba(118, 44, 192, 0.3);
-  }
-  
+    background-image: url("../img/pattern.jpg");
+}
+
 button {
     background-color: #4CAF50; 
     border: none;
@@ -61,6 +61,6 @@ td{
 }
 
 .alive{
-  background-color: white;
+  background-color: red;
   color: black;
 }
